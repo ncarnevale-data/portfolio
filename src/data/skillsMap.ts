@@ -1,6 +1,6 @@
 const skillsMap = {
     Python: { name: "Python", logoPath: "/python.png", colorrgb: "49, 111, 159" },
-    MySQL: { name: "MySQL", logoPath: "/mysql.svg", colorrgb: "3, 80, 105" },
+    SQL: { name: "SQL", logoPath: "/sql.png", colorrgb: "29, 138, 181" },
     PowerBI: {
       name: "Power BI",
       logoPath: "/power-bi.png",
@@ -11,6 +11,10 @@ const skillsMap = {
       logoPath: "/tableau.png",
       colorrgb: "232, 118, 45",
     },
+    Azure: { name: "Azure", logoPath: "/azure.png", colorrgb: "56, 192, 240" },
+    GoogleCloud: { name: "Google Cloud", logoPath: "/google-cloud.png", colorrgb: "208, 194, 40" },
+    Firebase: { name: "Firebase", logoPath: "/firebase.png", colorrgb: "255, 160, 0" },
+    MySQL: { name: "MySQL", logoPath: "/mysql.svg", colorrgb: "3, 80, 105" },
     Typescript: {
       name: "Typescript",
       logoPath: "/typescript.png",
@@ -44,7 +48,6 @@ const skillsMap = {
       logoPath: "/mongodb.png",
       colorrgb: "69, 73, 41",
     },
-    Firebase: { name: "Firebase", logoPath: "/firebase.png", colorrgb: "255, 160, 0" },
     HTML: { name: "HTML", logoPath: "/html.svg", colorrgb: "227, 79, 38" },
     CSS: { name: "CSS", logoPath: "/css.png", colorrgb: "33, 76, 229" },
     Nodejs: { name: "Node.js", logoPath: "/nodejs.png", colorrgb: "82, 159, 65" },
