@@ -22,11 +22,7 @@ const skillsMap = {
       colorrgb: "240, 219, 79",
     },
     React: { name: "React", logoPath: "/react.png", colorrgb: "97, 219, 251" },
-    ReactQuery: {
-      name: "React Query",
-      logoPath: "/react-query.png",
-      colorrgb: "255, 65, 84",
-    },
+    Vite: { name: "Vite", logoPath: "/vite.svg", colorrgb: "187, 54, 254" },
     TailwindCSS: {
       name: "Tailwind CSS",
       logoPath: "/tailwindcss.png",
@@ -37,9 +33,6 @@ const skillsMap = {
       logoPath: "/chakra-ui.png",
       colorrgb: "69, 199, 193",
     },
-    HTML: { name: "HTML", logoPath: "/html.svg", colorrgb: "227, 79, 38" },
-    CSS: { name: "CSS", logoPath: "/css.png", colorrgb: "33, 76, 229" },
-    Nodejs: { name: "Node.js", logoPath: "/nodejs.png", colorrgb: "82, 159, 65" },
     FastAPI: {
       name: "FastAPI",
       logoPath: "/fastapi.svg",
@@ -51,7 +44,14 @@ const skillsMap = {
       logoPath: "/mongodb.png",
       colorrgb: "69, 73, 41",
     },
+    Firebase: { name: "Firebase", logoPath: "/firebase.png", colorrgb: "255, 160, 0" },
+    HTML: { name: "HTML", logoPath: "/html.svg", colorrgb: "227, 79, 38" },
+    CSS: { name: "CSS", logoPath: "/css.png", colorrgb: "33, 76, 229" },
+    Nodejs: { name: "Node.js", logoPath: "/nodejs.png", colorrgb: "82, 159, 65" },
+    Git: { name: "Git", logoPath: "/git.png", colorrgb: "239, 79, 50" },
   };
+
+// ReactQuery: {name: "React Query",logoPath: "/react-query.png",colorrgb: "255, 65, 84",},
 
 const mappedSkills = Object.values(skillsMap)
 

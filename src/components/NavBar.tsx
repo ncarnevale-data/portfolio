@@ -1,7 +1,7 @@
 const NavBar = () => {
   return (
     <header className="sticky top-0 z-10 md:mb-8">
-      <div className="flex items-center justify-around bg-gray-600 p-4">
+      <div className="flex items-center justify-around bg-brand-green p-4">
         <h3 className="cursor-pointer text-2xl lg:text-3xl">
           <a href="#">NCarnevale</a>
         </h3>
