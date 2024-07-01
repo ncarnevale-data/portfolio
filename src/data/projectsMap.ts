@@ -15,6 +15,14 @@ const projectsMap = {
         deploy: 'https://game-hub-umber.vercel.app/', 
         github: 'https://github.com/ncarnevale-data/game-hub'
     },
+    GameHub3: {
+        name: "GameHub", 
+        description: "lorem20", 
+        logoPath: "/gamehub.jpg", 
+        technologies: ["Typescript", "React", "Chakra UI"], 
+        deploy: 'https://game-hub-umber.vercel.app/', 
+        github: 'https://github.com/ncarnevale-data/game-hub'
+    },
 };
 
 const mappedProjects = Object.values(projectsMap)

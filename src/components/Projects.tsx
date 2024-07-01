@@ -7,7 +7,7 @@ const Projects = () => {
     <Section id="projects">
       <div className="p-8">
         <h2 className="mb-8 text-center text-3xl font-bold">Proyectos</h2>
-        <div className="flex flex-wrap gap-10">
+        <div className="flex flex-wrap justify-evenly gap-6 md:gap-8">
           {projectsMap.map(
             (
               { name, description, logoPath, technologies, deploy, github },
