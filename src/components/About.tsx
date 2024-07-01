@@ -1,8 +1,9 @@
 import photo from "../assets/photo.jpeg";
+import Section from "./Section";
 
 const About = () => {
   return (
-    <section className="mx-auto max-w-7xl" id="about">
+    <Section id="about">
       <div className="grid grid-cols-1 gap-8 p-8 md:grid-cols-2">
         <div className="my-auto space-y-4">
           <h3 className="text-2xl ">Data Scientist & Web Developer</h3>
@@ -23,7 +24,7 @@ const About = () => {
           ></img>
         </div>
       </div>
-    </section>
+    </Section>
   );
 };
 
