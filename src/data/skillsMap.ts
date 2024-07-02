@@ -15,6 +15,7 @@ const skillsMap = {
     GoogleCloud: { name: "Google Cloud", logoPath: "/google-cloud.png", colorrgb: "208, 194, 40" },
     Firebase: { name: "Firebase", logoPath: "/firebase.png", colorrgb: "255, 160, 0" },
     MySQL: { name: "MySQL", logoPath: "/mysql.svg", colorrgb: "3, 80, 105" },
+    Selenium: { name: "Selenium", logoPath: "/selenium.png", colorrgb: "108, 204, 84" },
     Typescript: {
       name: "Typescript",
       logoPath: "/typescript.png",
