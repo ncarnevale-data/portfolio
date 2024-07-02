@@ -6,7 +6,7 @@ interface Props {
 
 const SkillContainer = ({ name, logoPath, colorrgb }: Props) => {
   return (
-    <div className="mx-4 flex h-32 w-20 cursor-pointer flex-col items-center justify-center gap-3">
+    <div className="mx-4 flex h-32 w-20 flex-col items-center justify-center gap-3">
       <div
         className="group relative flex h-[5rem] items-center justify-center overflow-hidden rounded"
         style={{
