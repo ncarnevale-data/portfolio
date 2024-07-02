@@ -1,5 +1,6 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import Section from "./Section";
+import { MdOutlineEmail } from "react-icons/md";
 
 const Footer = () => {
   const currentTime = new Date();
@@ -20,6 +21,9 @@ const Footer = () => {
             target="_blank"
           >
             <FaLinkedin className="h-8 w-8 transition-colors duration-300 hover:text-brand-orange" />
+          </a>
+          <a href="mailto:ncarnevaledata@gmail.com" target="_blank">
+            <MdOutlineEmail className="h-8 w-8 transition-colors duration-300 hover:text-brand-orange" />
           </a>
         </div>
       </div>
