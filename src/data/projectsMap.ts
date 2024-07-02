@@ -1,7 +1,8 @@
 const projectsMap = {
     GameHub: {
         name: "GameHub", 
-        description: "Proyecto Front-end de una aplicación de descubrimiento de videojuegos usando la API de RAWG.IO", 
+        description: "Proyecto Front-end de una aplicación de descubrimiento de videojuegos usando la API de RAWG.IO.", 
+        extraDesc: "Desarrollo en React utilizando Tanstack Query y Zustand.",
         logoPath: "/gamehub.jpg",
         technologies: ["Vite", "Typescript", "React", "Chakra UI"], 
         deploy: 'https://game-hub-umber.vercel.app/', 
