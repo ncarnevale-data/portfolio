@@ -1,13 +1,4 @@
 const projectsMap = {
-    GameHub: {
-        name: "GameHub", 
-        description: "Proyecto Front-end de una aplicación de descubrimiento de videojuegos usando la API de RAWG.IO.", 
-        extraDesc: "Desarrollo en React utilizando Tanstack Query y Zustand.",
-        logoPath: "/gamehub.jpg",
-        technologies: ["Vite", "Typescript", "React", "Chakra UI"], 
-        deploy: 'https://game-hub-umber.vercel.app/', 
-        github: 'https://github.com/ncarnevale-data/game-hub'
-    },
     LoLStatReports: {
         name: "Reportes LoL Stats", 
         description: "Trabajo como Analista de Datos en All Knights y Primate. Ejemplos de reportes semanales de estadísticas de equipos de League of Legends. Proceso de ETL (Extracción, Transformación y Carga) y visualización y generación de los informes.", 
@@ -21,6 +12,15 @@ const projectsMap = {
         technologies: ["Python", "SQL"], 
         deploy: 'https://drive.google.com/drive/folders/1qm_RXvR3KA0Gkv6fe61MO2q4fWCCIjyW?usp=sharing',
         professional: true
+    },
+    GameHub: {
+        name: "GameHub", 
+        description: "Proyecto Front-end de una aplicación de descubrimiento de videojuegos usando la API de RAWG.IO.", 
+        extraDesc: "Desarrollo en React utilizando Tanstack Query y Zustand.",
+        logoPath: "/gamehub.jpg",
+        technologies: ["Vite", "Typescript", "React", "Chakra UI"], 
+        deploy: 'https://game-hub-umber.vercel.app/', 
+        github: 'https://github.com/ncarnevale-data/game-hub'
     },
     MyPortfolio: {
         name: "Mi Portfolio", 
