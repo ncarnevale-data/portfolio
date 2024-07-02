@@ -27,11 +27,11 @@ const NavBar = () => {
 
   return (
     <header className="sticky top-0 z-10 md:mb-8" id="navbar">
-      <div className="flex items-center justify-around bg-brand-green py-4">
+      <div className="relative flex items-center justify-between bg-brand-green px-8 py-4 xl:px-20">
         <h3 className="cursor-pointer text-2xl lg:text-3xl">
           <a href="/">NCarnevale</a>
         </h3>
-        <ul className="hidden lg:flex lg:w-auto lg:items-center lg:space-x-3">
+        <ul className="absolute left-1/2 hidden -translate-x-1/2 transform lg:flex lg:w-auto lg:items-center lg:space-x-6">
           <li>
             <button
               onClick={() => scrollTo("about")}
