@@ -1,4 +1,4 @@
-import photo from "../assets/photo.jpeg";
+import photo from "../assets/portrait.jpg";
 import Section from "./Section";
 
 const About = () => {
@@ -9,11 +9,10 @@ const About = () => {
           <h3 className="text-2xl ">Data Scientist & Web Developer</h3>
           <h1 className="text-4xl font-bold">Nicolás Carnevale</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
-            laboriosam animi soluta magnam dolorum non. Officiis reiciendis ab,
-            omnis aperiam expedita veritatis, quam, nulla facere iure ducimus
-            iste aliquam fuga? Accusamus, inventore illum. Dignissimos nihil
-            aspernatur ipsam iste quas saepe?
+            Aspiro a un rol donde pueda aprovechar mis habilidades en ciencia de
+            datos y desarrollo web para impulsar soluciones innovadoras que
+            mejoren la experiencia del cliente o usuario, aborden desafíos
+            empresariales y/o optimicen los procesos de la empresa.
           </p>
         </div>
         <div>
