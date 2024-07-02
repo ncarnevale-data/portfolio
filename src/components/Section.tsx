@@ -5,11 +5,33 @@ interface Props {
   children: ReactNode;
   id: string;
   animation?: boolean;
+  bgColor?: "blue" | "black";
+  textColor?: "lavender" | "white" | "orange";
 }
 
-const Section = ({ children, id, animation = true }: Props) => {
+const Section = ({
+  children,
+  id,
+  animation = true,
+  bgColor,
+  textColor,
+}: Props) => {
+  const bgColorVariants = {
+    blue: "bg-brand-blue",
+    black: "bg-brand-black",
+  };
+
+  const textColorVariants = {
+    lavender: "text-brand-lavender",
+    white: "text-brand-white",
+    orange: "text-brand-orange",
+  };
+
   return (
-    <section id={id}>
+    <section
+      className={`${bgColor ? bgColorVariants[bgColor] : ""} ${textColor ? textColorVariants[textColor] : ""}`}
+      id={id}
+    >
       {animation && (
         <motion.div
           className="mx-auto max-w-7xl"
