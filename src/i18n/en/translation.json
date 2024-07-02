@@ -1,4 +1,5 @@
 {
+    "cvpath": "/cv/en.pdf",
     "description": "I aspire to a role where I can leverage my data science and web development skills to drive innovative solutions that improve customer or user experience, address business challenges, and/or optimize company processes",
     "about": "About me",
     "skills": "Skills",
@@ -10,5 +11,6 @@
     "sendMessage": "Send message",
     "messageSent": "Message sent",
     "repository": "Repository",
-    "professional": "Professional"
+    "professional": "Professional",
+    "download": "Download"
 }

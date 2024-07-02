@@ -1,4 +1,5 @@
 {
+    "cvpath": "/cv/es.pdf",
     "description": "Aspiro a un rol donde pueda aprovechar mis habilidades en ciencia de datos y desarrollo web para impulsar soluciones innovadoras que mejoren la experiencia del cliente o usuario, aborden desafíos empresariales y/o optimicen los procesos de la empresa.",
     "about": "Sobre mí",
     "skills": "Habilidades",
@@ -10,5 +11,6 @@
     "sendMessage": "Enviar mensaje",
     "messageSent": "Mensaje enviado",
     "repository": "Repositorio",
-    "professional": "Profesional"
+    "professional": "Profesional",
+    "download": "Descargar"
 }
