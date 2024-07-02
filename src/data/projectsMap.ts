@@ -22,13 +22,12 @@ const projectsMap = {
         deploy: 'https://drive.google.com/drive/folders/1qm_RXvR3KA0Gkv6fe61MO2q4fWCCIjyW?usp=sharing',
         professional: true
     },
-    GameHub3: {
-        name: "GameHub", 
-        description: "lorem20", 
+    MyPortfolio: {
+        name: "Mi Portfolio", 
+        description: "Lo estás viendo ahora! No dudes en darme tu opinión, usarlo como inspiración o hacerme cualquier pregunta!", 
         logoPath: "/gamehub.jpg", 
-        technologies: ["Typescript", "React", "Chakra UI"], 
-        deploy: 'https://game-hub-umber.vercel.app/', 
-        github: 'https://github.com/ncarnevale-data/game-hub'
+        technologies: ["Typescript", "React", "Vite", "Tailwind CSS"],
+        github: 'https://github.com/ncarnevale-data/portfolio'
     },
 };
 
