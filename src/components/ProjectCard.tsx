@@ -3,33 +3,26 @@ import { FaGithub } from "react-icons/fa";
 import skillsMap from "../data/skillsMap";
 import ProjectModal from "./ProjectModal";
 import { useState } from "react";
+import { Project } from "../data/projectsMap";
+import { getTranslatedText } from "../utils";
+import { useTranslation } from "react-i18next";
 
 interface Props {
-  name: string;
-  description: string;
-  logoPath: string;
-  technologies: string[];
-  extraDesc?: string;
-  imgPaths?: string[];
-  paragraphs?: string[];
-  deploy?: string;
-  github?: string;
-  professional?: boolean;
+  project: Project;
 }
 
-const ProjectCard = ({
-  name,
-  description,
-  logoPath,
-  technologies,
-  extraDesc,
-  imgPaths,
-  paragraphs,
-  deploy,
-  github,
-  professional = false,
-}: Props) => {
+const ProjectCard = ({ project }: Props) => {
+  const { t } = useTranslation();
   const [modalIsOpen, setModalIsOpen] = useState(false);
+  const {
+    name,
+    description,
+    logoPath,
+    technologies,
+    deploy,
+    github,
+    professional,
+  } = project;
 
   const skillsUsed = skillsMap.filter((skill) =>
     technologies.includes(skill.name),
@@ -70,9 +63,9 @@ const ProjectCard = ({
           </ul>
           <div className="space-y-2">
             <h3 className="text-lg font-bold transition-all duration-300 group-hover:text-brand-orange">
-              {name}
+              {getTranslatedText(name)}
             </h3>
-            <p className="text-xs">{description}</p>
+            <p className="text-xs">{getTranslatedText(description)}</p>
           </div>
           <div className="flex flex-row items-center justify-evenly">
             {deploy && (
@@ -91,7 +84,7 @@ const ProjectCard = ({
                 target="_blank"
                 className="flex flex-row items-center gap-1 rounded-2xl bg-slate-800 px-4 py-2 transition-colors duration-500 hover:bg-slate-900"
               >
-                <h5>Repositorio</h5>
+                <h5>{t("repository")}</h5>
                 <FaGithub />
               </a>
             )}
@@ -101,15 +94,7 @@ const ProjectCard = ({
       <ProjectModal
         isOpen={modalIsOpen}
         onRequestClose={() => setModalIsOpen(false)}
-        name={name}
-        description={description}
-        logoPath={logoPath}
-        extraDesc={extraDesc}
-        imgPaths={imgPaths}
-        paragraphs={paragraphs}
-        technologies={technologies}
-        deploy={deploy}
-        github={github}
+        project={project}
       />
     </>
   );

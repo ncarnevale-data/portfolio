@@ -1,6 +1,7 @@
 import { FormEvent, useState } from "react";
 import Section from "./Section";
 import emailjs from "@emailjs/browser";
+import { useTranslation } from "react-i18next";
 
 const delay = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 
@@ -9,6 +10,7 @@ const TEMPLATE_ID = import.meta.env.VITE_TEMPLATE_ID;
 const PUBLIC_KEY = import.meta.env.VITE_PUBLIC_KEY;
 
 const Contact = () => {
+  const { t } = useTranslation();
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -41,11 +43,11 @@ const Contact = () => {
       textColor="lavender"
     >
       <div className="p-8">
-        <h2 className="mb-8 text-center text-3xl font-bold">Contacto</h2>
+        <h2 className="mb-8 text-center text-3xl font-bold">{t("contact")}</h2>
         <form className="space-y-6" onSubmit={handleSubmit}>
           <div className="flex flex-col space-y-2">
             <label htmlFor="name" className="font-bold">
-              Nombre
+              {t("name")}
             </label>
             <input
               className="rounded-lg bg-brand-blue p-2 text-brand-white placeholder-brand-white/60"
@@ -70,12 +72,12 @@ const Contact = () => {
           </div>
           <div className="flex flex-col space-y-2">
             <label htmlFor="message" className="font-bold">
-              Tu Mensaje
+              {t("yourMessage")}
             </label>
             <textarea
               className="h-32 rounded-lg bg-brand-blue p-2 text-brand-white placeholder-brand-white/60"
               id="message"
-              placeholder="Haceme saber como puedo ayudarte"
+              placeholder={t("messagePlaceholder")}
               onChange={(e) => setMessage(e.target.value)}
               required
             />
@@ -84,7 +86,7 @@ const Contact = () => {
             type="submit"
             className={`${enviado ? "bg-brand-green" : "bg-brand-white"} rounded-lg px-10 py-3 text-brand-black transition-colors duration-300 hover:bg-brand-darkblue hover:text-brand-orange`}
           >
-            {enviado ? "Mensaje enviado" : "Enviar mensaje"}
+            {enviado ? t("sendMessage") : t("messageSent")}
           </button>
         </form>
       </div>

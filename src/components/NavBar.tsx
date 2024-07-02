@@ -1,4 +1,11 @@
+import { useState } from "react";
+import { useTranslation } from "react-i18next";
+import { MdLanguage } from "react-icons/md";
+
 const NavBar = () => {
+  const [english, setEnglish] = useState(false);
+  const { t, i18n } = useTranslation();
+
   const scrollTo = (id: string) => {
     const to = document.getElementById(id);
     const navbarHeight = document.getElementById("navbar")!.offsetHeight;
@@ -8,9 +15,19 @@ const NavBar = () => {
     }
   };
 
+  const handleChangeLanguage = () => {
+    if (english) {
+      setEnglish(false);
+      i18n.changeLanguage("es");
+    } else {
+      setEnglish(true);
+      i18n.changeLanguage("en");
+    }
+  };
+
   return (
     <header className="sticky top-0 z-10 md:mb-8" id="navbar">
-      <div className="flex items-center justify-around bg-brand-green p-4">
+      <div className="flex items-center justify-around bg-brand-green py-4">
         <h3 className="cursor-pointer text-2xl lg:text-3xl">
           <a href="/">NCarnevale</a>
         </h3>
@@ -20,7 +37,7 @@ const NavBar = () => {
               onClick={() => scrollTo("about")}
               className="text-sm transition-colors duration-300 hover:text-brand-orange"
             >
-              SOBRE MÍ
+              {t("about").toUpperCase()}
             </button>
           </li>
           <li>
@@ -28,7 +45,7 @@ const NavBar = () => {
               onClick={() => scrollTo("skills")}
               className="text-sm transition-colors duration-300 hover:text-brand-orange"
             >
-              HABILIDADES
+              {t("skills").toUpperCase()}
             </button>
           </li>
           <li>
@@ -36,7 +53,7 @@ const NavBar = () => {
               onClick={() => scrollTo("projects")}
               className="text-sm transition-colors duration-300 hover:text-brand-orange"
             >
-              PROYECTOS
+              {t("projects").toUpperCase()}
             </button>
           </li>
           <li>
@@ -44,11 +61,21 @@ const NavBar = () => {
               onClick={() => scrollTo("contact")}
               className="text-sm transition-colors duration-300 hover:text-brand-orange"
             >
-              CONTACTO
+              {t("contact").toUpperCase()}
             </button>
           </li>
         </ul>
-        <div className="">Socials/ColorModeSwitch</div>
+        <div className="flex flex-row items-center gap-1">
+          <MdLanguage
+            className="h-6 w-6 cursor-pointer transition-colors duration-300 hover:text-brand-orange"
+            onClick={handleChangeLanguage}
+          />
+          {english ? (
+            <h4 className="mt-0.5 text-lg">EN</h4>
+          ) : (
+            <h4 className="mt-0.5 text-lg">ES</h4>
+          )}
+        </div>
       </div>
     </header>
   );
