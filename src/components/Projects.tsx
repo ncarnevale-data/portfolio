@@ -10,17 +10,32 @@ const Projects = () => {
         <div className="flex flex-wrap justify-evenly gap-6 md:gap-8">
           {projectsMap.map(
             (
-              { name, description, logoPath, technologies, deploy, github },
+              {
+                name,
+                description,
+                logoPath,
+                extraDesc,
+                imgPaths,
+                paragraphs,
+                technologies,
+                deploy,
+                github,
+                professional,
+              },
               index,
             ) => (
               <ProjectCard
                 key={index}
                 name={name}
                 description={description}
-                logoPath={logoPath}
                 technologies={technologies}
+                logoPath={logoPath}
+                extraDesc={extraDesc}
+                imgPaths={imgPaths}
+                paragraphs={paragraphs}
                 deploy={deploy}
                 github={github}
+                professional={professional}
               />
             ),
           )}
