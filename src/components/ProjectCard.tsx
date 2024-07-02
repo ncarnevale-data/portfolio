@@ -43,7 +43,7 @@ const ProjectCard = ({ project }: Props) => {
             className="w-full object-cover"
           ></img>
           <div className="absolute right-0 top-4 rounded-bl-lg rounded-tl-lg bg-brand-green py-2 pl-2 pr-1 text-base font-semibold text-brand-lavender transition-all duration-300 group-hover:bg-brand-orange group-hover:text-brand-darkblue md:pl-4 md:pr-3 md:text-lg">
-            {professional ? "Profesional" : "Personal"}
+            {professional ? t("professional") : "Personal"}
           </div>
         </div>
         <div className="flex h-[55%] w-full flex-col justify-between space-y-4 p-4">
