@@ -86,7 +86,7 @@ const Contact = () => {
             type="submit"
             className={`${enviado ? "bg-brand-green" : "bg-brand-white"} rounded-lg px-10 py-3 text-brand-black transition-colors duration-300 hover:bg-brand-darkblue hover:text-brand-orange`}
           >
-            {enviado ? t("sendMessage") : t("messageSent")}
+            {enviado ? t("messageSent") : t("sendMessage")}
           </button>
         </form>
       </div>
