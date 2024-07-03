@@ -1,6 +1,7 @@
 const skillsMap = {
     Python: { name: "Python", logoPath: "/python.png", colorrgb: "49, 111, 159" },
     SQL: { name: "SQL", logoPath: "/sql.png", colorrgb: "29, 138, 181" },
+    Jupyter: { name: "Jupyter", logoPath: "/jupyter.png", colorrgb: "221, 137, 84" },
     PowerBI: {
       name: "Power BI",
       logoPath: "/power-bi.png",
@@ -11,7 +12,9 @@ const skillsMap = {
       logoPath: "/tableau.png",
       colorrgb: "232, 118, 45",
     },
+    MLflow: { name: "MLflow", logoPath: "/mlflow.png", colorrgb: "62, 171, 218" },
     Azure: { name: "Azure", logoPath: "/azure.png", colorrgb: "56, 192, 240" },
+    AzureML: { name: "Azure ML", logoPath: "/azureml.png", colorrgb: "78, 204, 232" },
     GoogleCloud: { name: "Google Cloud", logoPath: "/google-cloud.png", colorrgb: "208, 194, 40" },
     Firebase: { name: "Firebase", logoPath: "/firebase.png", colorrgb: "255, 160, 0" },
     MySQL: { name: "MySQL", logoPath: "/mysql.svg", colorrgb: "3, 80, 105" },
