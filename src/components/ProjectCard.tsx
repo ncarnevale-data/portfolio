@@ -35,6 +35,7 @@ const ProjectCard = ({ project }: Props) => {
       <div
         className="group flex h-[30rem] w-[24rem] cursor-pointer flex-wrap overflow-hidden rounded-2xl border-[3px] border-brand-cyan transition-all duration-300 hover:scale-105 hover:border-brand-orange"
         onClick={() => setModalIsOpen(true)}
+        onKeyDown={() => setModalIsOpen(true)}
       >
         <div className="relative h-[45%] overflow-hidden">
           <img
