@@ -49,9 +49,9 @@ const ProjectModal = ({ isOpen, onRequestClose, project }: Props) => {
             alt={getTranslatedText(name)}
           />
           <ul className="flex flex-wrap gap-2 text-base">
-            {skillsUsed.map(({ name, colorrgb }, index) => (
+            {skillsUsed.map(({ name, colorrgb }) => (
               <li
-                key={index}
+                key={name}
                 className="rounded px-2.5 py-1.5"
                 style={{
                   backgroundColor: `rgba(${colorrgb}, 0.3)`,
@@ -91,7 +91,7 @@ const ProjectModal = ({ isOpen, onRequestClose, project }: Props) => {
         </div>
         {extraDesc && <p>{getTranslatedText(extraDesc)}</p>}
         {imgPaths?.map((path, index) => (
-          <div className="space-y-8" key={index}>
+          <div className="space-y-8" key={name.en}>
             <img className="w-full" src={`/projects/${path}`} />
             {paragraphs && getTranslatedList(paragraphs)[index] && (
               <p>{getTranslatedList(paragraphs)[index]}</p>

@@ -48,9 +48,9 @@ const ProjectCard = ({ project }: Props) => {
         </div>
         <div className="flex h-[55%] w-full flex-col justify-between space-y-4 p-4">
           <ul className="flex flex-wrap gap-2 text-sm">
-            {skillsUsed.map(({ name, colorrgb }, index) => (
+            {skillsUsed.map(({ name, colorrgb }) => (
               <li
-                key={index}
+                key={name}
                 className="rounded px-2.5 py-1.5"
                 style={{
                   backgroundColor: `rgba(${colorrgb}, 0.3)`,

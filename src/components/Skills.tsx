@@ -11,9 +11,9 @@ const Skills = () => {
       <div className="p-8">
         <h2 className="mb-8 text-center text-3xl font-bold">{t("skills")}</h2>
         <div className="flex flex-wrap">
-          {skillsMap.map((skill, index) => (
+          {skillsMap.map((skill) => (
             <SkillContainer
-              key={index}
+              key={skill.name}
               name={skill.name}
               logoPath={skill.logoPath}
               colorrgb={skill.colorrgb}
