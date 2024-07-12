@@ -39,7 +39,7 @@ const ProjectCard = ({ project }: Props) => {
       >
         <div className="relative h-[45%] overflow-hidden">
           <img
-            src={`/projects/${logoPath}`}
+            src={`projects/${logoPath}`}
             alt="test"
             className="w-full object-cover"
           ></img>
