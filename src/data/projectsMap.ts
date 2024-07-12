@@ -12,7 +12,7 @@ const projectsMap = {
           en: "Developed in Python using data analysis libraries (numpy, pandas, matplotlib, seaborn, etc.) and Pillow for image generation from code, among others.",
           es: "Desarrollo en Python utilizando librerías de análisis de datos (numpy, pandas, matplotlib, seaborn, etc.) y Pillow para la generación de imágenes desde el código, entre otras.",
         },
-        logoPath: "/lolstatreports.png",
+        logoPath: "lolstatreports.png",
         imgPaths: ["/lolstatreports1.png", "/lolstatreports2.png", "/lolstatreports3.png", "/lolstatreports4.png", "/lolstatreports5.png", "/lolstatreports6.png", "/lolstatreports7.png"],
         paragraphs: {
           en: [
@@ -41,7 +41,7 @@ const projectsMap = {
           en: "Developed in React using Tanstack Query and Zustand.",
           es: "Desarrollo en React utilizando Tanstack Query y Zustand.",
         },
-        logoPath: "/gamehub.jpg",
+        logoPath: "gamehub.jpg",
         technologies: ["Vite", "Typescript", "React", "Chakra UI"],
         deploy: 'https://game-hub-umber.vercel.app/',
         github: 'https://github.com/ncarnevale-data/game-hub',
@@ -56,7 +56,7 @@ const projectsMap = {
           en: "You are seeing it now! Feel free to give me your feedback, use it as inspiration, or ask me any questions!",
           es: "Lo estás viendo ahora! No dudes en darme tu opinión, usarlo como inspiración o hacerme cualquier pregunta!",
         },
-        logoPath: "/gamehub.jpg",
+        logoPath: "gamehub.jpg",
         technologies: ["Typescript", "React", "Vite", "Tailwind CSS"],
         github: 'https://github.com/ncarnevale-data/portfolio',
         professional: false
