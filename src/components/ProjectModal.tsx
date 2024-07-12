@@ -45,7 +45,7 @@ const ProjectModal = ({ isOpen, onRequestClose, project }: Props) => {
         <div className="space-y-2">
           <img
             className="w-full"
-            src={`/projects/${logoPath}`}
+            src={`projects/${logoPath}`}
             alt={getTranslatedText(name)}
           />
           <ul className="flex flex-wrap gap-2 text-base">
@@ -92,7 +92,7 @@ const ProjectModal = ({ isOpen, onRequestClose, project }: Props) => {
         {extraDesc && <p>{getTranslatedText(extraDesc)}</p>}
         {imgPaths?.map((path, index) => (
           <div className="space-y-8" key={name.en}>
-            <img className="w-full" src={`/projects/${path}`} />
+            <img className="w-full" src={`projects/${path}`} />
             {paragraphs && getTranslatedList(paragraphs)[index] && (
               <p>{getTranslatedList(paragraphs)[index]}</p>
             )}
